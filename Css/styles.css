@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  display: flex;
+  height : 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3EAE3;
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  /* Layout breakpoints */
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+
+  /* Primary Colors */
+  --color-green-500: hsl(158, 36%, 37%);
+  --color-green-700: hsl(158, 42%, 18%);
+
+  /* Neutral Colors */
+  --color-black: hsl(212, 21%, 14%);
+  --color-grey: hsl(228, 12%, 48%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-white: hsl(0, 0%, 100%);
+}
+article{
+  display: flex;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  width : 600px;
+  
+}
+
+section, img-parfum {
+  width : 300px;
+  
+}
+
+img{
+  width : 100%;
+  border-radius: 0.625rem 0 0 0.625rem;
+}
+
+.tag{
+  font-family: 'Montserrat';
+  font-weight : 300;
+  color : var(--color-grey);
+  font-size: 0.75rem;
+  margin-left : 1.969rem;
+  margin-top : 1.938rem;
+  letter-spacing: 0.313rem;
+
+}
+
+
+h1{
+  margin-left : 2.031rem;
+  margin-top : 1.125rem;
+  font-size : 2rem;
+  font-family: 'Fraunces';
+  line-height: 2rem;
+}
+
+.description{
+  color : var(--color-grey);
+  font-size: 0.875rem;
+  font-family: 'Montserrat';
+  margin-top : 1.625rem;
+  margin-left : 2rem;
+  line-height: 1.406rem;
+
+}
+
+.prices {
+  display: flex;
+}
+
+.price{
+  font-size : 2rem;
+  font-family : 'Fraunces';
+  margin-top : 1.375rem;
+  margin-left: 2rem;
+  color : var(--color-green-500);
+
+}
+
+del{
+  font-family: 'Montserrat';
+  font-size: 0.813rem;
+  margin-top : 2.25rem;
+  color : var(--color-grey);
+  margin-left : 1.188rem;
+
+}
+
+.btn-buy{
+  height : auto;
+  width : 239px;
+  font-family : 'Montserrat';
+  display : flex;
+  color : var(--color-white);
+  background-color: var(--color-green-500);
+  border: none;
+  border-radius: 0.625rem;
+  margin-left : 1.938rem;
+  margin-top : 1.25rem;
+  justify-content: center;
+  align-items: center;
+  font-weight : 700;
+  gap : 0.813rem;
+  padding : 0.937rem 0;
+  font-size: 0.875rem ;
+}
+
+.icon{
+  
+  width : 1rem;
+  height : 1rem;
+  
+  border-radius: 0;
+
+}
