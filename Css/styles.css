@@ -30,7 +30,7 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img, picture, video, canvas, svg, picture {
   display: block;
   max-width: 100%;
 }
@@ -79,18 +79,22 @@ article{
   display: flex;
   background-color: var(--color-white);
   border-radius: 10px;
-  width : 600px;
+  width : 80%;
+  max-width: 600px;
   
 }
 
-section, img-parfum {
-  width : 300px;
-  
+section{
+  width : 50%;
+}
+
+.img-parfum{
+  width: 100%;
 }
 
 img{
-  width : 100%;
   border-radius: 0.625rem 0 0 0.625rem;
+  background: url("../images/image-product-desktop.jpg");
 }
 
 .tag{
@@ -172,3 +176,49 @@ del{
   border-radius: 0;
 
 }
+
+@media screen and (max-width: 750px) {
+  article {
+    display: flex;
+    flex-direction: column;
+    width : 59.99%;
+
+  }
+  
+  section{
+    width : 100%
+  }
+
+  
+  img{
+    border-radius: 0.625rem 0.625rem  0 0;
+  }
+  .tag{
+    margin-left : 1.500rem;
+    margin-top : 1.338rem;
+  }
+
+  h1{
+    margin-left : 1.500rem;
+    margin-top : 1rem;
+  }
+
+  .description{
+    margin-left : 1.500rem;
+  }
+
+  .price{
+    margin-left : 1.500rem;
+    margin-bottom : 1rem;
+  }
+
+  .btn-buy{
+    width : 88%;
+    border-radius: 8px;
+    margin : 0 auto;
+    padding : 0.937rem 50px 0.937rem  50px ;
+    margin-bottom : 20px;
+  }
+}
+
+
